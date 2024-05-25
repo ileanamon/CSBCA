@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counts the frequency of each character in the string</h1>
+    <script>
+        let string = "welcome to computer science beginner bootcamp";
+        let countObj = {}
+        for (let i = 0; i < string.length; i++){
+            let char = string.charAt(i);
+            if(!countObj[char]){
+                countObj[char] = 0;
+            }
+            countObj[char] += 1;
+        }
+        console.log(countObj);
+        
+    </script>
+</body>
+</html>
